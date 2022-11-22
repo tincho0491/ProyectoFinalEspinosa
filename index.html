@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gimnasio, musculación, salud, buenos aires, recoleta, palermo, almagro">
+    <meta name="description"
+        content="Unite a Magym, un gimnasio con todas las clases y para todas las edades. Te ayudamos a cumplir tus metas.">
+    <title>Gimnasio Magym</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Links Logo Favicon y CSS-->
+    <link rel="shortcut icon" href="images/logo-Magym.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/estilo.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1 class="hello colCentered">¡Bienvenidos a Magym!</h1>
+        <a href="#" target="_self" class="logo colCentered">
+            <img src="images/logo-Magym-sf.png" width="100" height="100" alt="Logo">
+        </a>    
+
+        <nav class="navigation navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/sedes.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sedes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/sedes.html">Sedes</a></li>
+                                <li><a class="dropdown-item" href="pages/clases-reservas.html">Clases|Reservas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="pages/novedades.html">Novedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="pages/tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <nav class="navbar">
+                            <form class="container-fluid justify-content-start">
+                                <!-- Button trigger modal iniciarSesion -->
+                                <button class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                    data-bs-target="#iniciarSesion" type="button">Entrar</button>
+                                <!-- Button trigger modal registrarse -->
+                                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#registrarse" type="button">Registrarse</button>
+                            </form>
+                        </nav>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Modal iniciarSesion -->
+        <div class="modal fade" id="iniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="correoElectrónico" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correoElectrónico"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password1">
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Entrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registrarse" tabindex="-1" aria-labelledby="Register" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="Register">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Newsletter</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="mainContainer">
+        <section class="intro">
+            <div>
+                <h2>Inscripciones abiertas</h2>
+                <h3>Registrate y accedé a todos nuestros servicios y beneficios</h3>
+                <ul>
+                    <li>Tienda Online</li>
+                    <li>Reservas de clases</li>
+                    <li>Asesoramiento Nutricional</li>
+                    <li>Eventos Especiales</li>
+                </ul>
+                <p>*Descuentos por grupo familiar</p>
+            </div>
+        </section>
+
+        <!-- Sección: Pilares de la Empresa -->
+
+        <aside class="pilars pilar1 marginTb marginLr" data-aos="fade-right">
+            <img src="images/pilar.png" width="150px" height="350px" alt="imagen de un pilar">
+        </aside>
+
+        <article class="moralArticle marginTb">
+            <h2 class="colCentered">¿Por qué elegirnos?</h2>
+
+            <div class="mb-3">
+                <h3> Visión </h3>
+                <p>
+                    Buscamos ser un gimnasio líder, atractivo, brindando una amplia variedad de actividades
+                    físicas para que todo aquel que quiera pueda acercarse a nosotros y encontrar aquello que
+                    busca. Queremos marcar la diferencia ofreciendo a nuestros miembros un servicio integral.
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <h3>Misión</h3>
+                <p>
+                    Es nuestra prioridad ayudar a nuestros miembros a sostener una excelente condición física,
+                    generando habitos saludables a través del entrenamiento y alimentación.
+                </p>
+                <p>
+                    Buscamos mejorar la calidad de vida y estamos convencidos que el ejercicio y la nutrición
+                    forman parte del camino.
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <h3>Valores</h3>
+                <p>
+                    El compromiso con nuestros miembros es uno de los pilares fundamentales. Es por ello que
+                    valoramos la eficacia en la búsqueda de lograr los objetivos propuestos por cada integrante
+                    en la comunidad de Magym
+                </p>
+            </div>
+
+            <div>
+                <a href="pages/sobre-nosotros.html#nuestroEquipo" class="colCentered">Conocé a nuestro equipo</a>
+            </div>
+        </article>
+
+        <aside class="pilars pilar2 marginTb marginLr" data-aos="fade-left">
+            <img src="images/pilar.png" width="150px" height="350px" alt="imagen de un pilar">
+        </aside>
+
+        <!-- Sección Publicidad y Formulario -->
+        <section class="ask">
+            <article class="askArticle marginTb">
+                <h2>¡Unite a Nosotros!</h2>
+                <p>Te invitamos a sumarte a la comunidad de Magym donde tu salud nos interesa. Estamos para acompañarte
+                    y brindarte la mejor atención. Cambiá tu rutina, creá hábitos y ganá salud.
+                </p>
+                <p><a href="vacioPorAhora">Registrate:</a> y accedé a nuestra tienda o reservá tu clase</p>
+            </article>
+
+            <aside class="askAside marginTb">
+                <div class="colCentered">
+                    <h2>¿Dudas?¿Consultas?</h2>
+                    <h3>¡Contactanos!</h3>
+                </div>
+
+                <form class="form">
+                    <div class="fila">
+                        <div class="columna1">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido">
+                            <label for="correo">Correo Electrónico</label>
+                            <input type="email" id="correo">
+                        </div>
+                        <textarea class="columna2" cols="30" rows="10">Dejá tu mensaje.</textarea>
+                    </div>
+                    <div class="botones">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+            </aside>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <h2 class="colCentered mb-3">Canales de Comunicación</h2>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook-logo.png" width="40" height="40" alt="Facebook">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/logo_instagram-sf.png" width="40" height="40" alt="Instagram">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.whatsapp.com" target="_blank">
+                    <img src="images/WhatsApp_logo-cuadrado-sf.png" width="40" height="40" alt="Whatsapp">
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:contacto@magym.com.ar" target="_blank">
+                    <img src="images/logo_correo1-sf.png" width="40" height="40" alt="Correo Electrónico">
+                </a>
+            </li>
+        </ul>
+
+        <p class="designer">Sitio web creado por Martin</p>
+    </footer>
+
+    <!-- Script para Animaciones de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

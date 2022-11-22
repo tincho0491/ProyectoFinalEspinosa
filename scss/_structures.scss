@@ -1,0 +1,42 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+/* Estilos generales */
+
+.colCentered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rowCentered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.marginLr {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.marginTb {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ml {
+    margin-left: 2rem;
+}
+
+.mr {
+    margin-right: 2rem;
+}

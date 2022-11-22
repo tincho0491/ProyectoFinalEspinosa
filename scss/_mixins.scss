@@ -1,0 +1,40 @@
+@mixin border-color($color) {
+    border: 2px solid $color;
+}
+
+//Mixin con Condicionales
+@mixin margins ($tipo, $valor) {
+    @if $tipo == t {
+        margin-top: $valor;
+    }
+    @else if $tipo == b {
+        margin-bottom: $valor;
+    }
+    @else if $tipo == l {
+        margin-left: $valor;
+    }
+    @else if $tipo == r {
+        margin-right: $valor;
+    }
+    @else if $tipo == tb {
+        margin-top: $valor;
+        margin-bottom: $valor;
+    }
+    @else if $tipo == lr {
+        margin-left: $valor;
+        margin-right: $valor;
+    }
+    @else {
+        margin: $valor;
+    }
+}
+
+@mixin linkVisited {
+    a {
+        color: #93d3df;
+
+        &:visited {
+            color: #93d3df;
+        }
+    }
+}

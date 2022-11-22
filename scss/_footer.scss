@@ -1,0 +1,22 @@
+/* FLEXBOX FOOTER */
+@import "variables.scss";
+footer {
+    background-color: $c_footer;
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    p {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}

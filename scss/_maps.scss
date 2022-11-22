@@ -1,0 +1,16 @@
+/* MAP - GET */
+$color: (1: #474E68, 2: #595c75, 3: #605c75, 4: #55506b);
+$botones: (arriba: #474E68, abajo: #595c75, izquierda: #605c75, derecha: #55506b);
+
+@for $i from 1 through 4 {
+    .news#{$i} {
+        background-color: map-get($color, $i);
+    }
+}
+
+
+@each $boton, $color in $botones {
+    .btn--#{$boton}{
+        background-color: $color;
+    }
+}

@@ -1,0 +1,467 @@
+@import "header", "footer", "structures", "variables", "mixins", "maps", "transitions";
+
+
+/* Estilos MAIN */
+main {
+    background-color: $c_section1;
+}
+
+.intro {
+    grid-area: intro;
+    background-image: url(../images/young-fitness-man-in-studio.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 80vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+
+    div {
+        @extend .colCentered;
+        margin-left: 5%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Estilo a nuestros pilares */
+
+.pilars {
+    background-color: white;
+    box-shadow: 0px 0px 8px 7px #0000007a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: auto;
+}
+
+.pilar1 {
+    grid-area: pilar1;
+}
+
+.pilar2 {
+    grid-area: pilar2;
+}
+
+.moralArticle {
+    grid-area: moralAr;
+    width: 800px;
+    line-height: 25px;
+    font-size: large;
+
+    @include linkVisited;
+}
+
+/* Estilo para sección de formulario */
+
+.ask {
+    grid-area: ask;
+    width: auto;
+    background-color: $c_section2;
+    display: flex;
+    justify-content: space-evenly;
+
+    article {
+        font-size: 20px;
+        line-height: 40px;
+        width: 400px;
+        display: block;
+        @include linkVisited;
+    }
+}
+
+
+/* FORMULARIOS */
+
+.askAside {
+    width: 600px;
+    height: auto;
+    @include border-color(black);
+    border-radius: 4px;
+    padding: 4px;
+
+    div {
+        @include margins(b, 0.5rem);
+    }
+
+    .fila {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .columna1 {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            input {
+                font-size: 1rem;
+                padding: 1px;
+                @include border-color(#350149);
+                height: 30px;
+
+                /* Animación para formulario */
+                &:hover {
+                    height: 35px;
+                    transition: all 1s;
+                }
+            }
+        }
+
+        .columna2 {
+            width: 300px;
+            height: 150px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            @include border-color(#350149);
+            @include margins(l, 2rem);
+            font-size: 1rem;
+            padding: 2px;
+        }
+    }
+
+
+    /* Estilo para botones de formulario */
+
+    .botones {
+        @extend .rowCentered;
+        align-items: center;
+        @include margins(t, 1rem);
+
+        input {
+            background-color: rgba(50, 50, 50, 0.2);
+            @include border-color(#2b023b);
+            @include margins (all, 10px);
+            font-size: 1rem;
+            padding: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+/*--------- Style for Sedes.html ---------- */
+
+.galery {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+}
+
+.schedule {
+    background-color: $c_section2;
+
+    table {
+        width: 70vw;
+        @include border-color(#754848);
+    }
+}
+
+.location {
+    background-color: $c_section3;
+    padding: 1rem 2rem 1rem 2rem;
+    width: auto;
+
+    div {
+        margin-top: 20px;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Styles for sobre-nosotros.html */
+.ourHistory {
+    @extend .colCentered;
+
+    button {
+        background-color: $c_section1;
+    }
+}
+
+.cronology .card {
+    background-color: $c_section3;
+    border: 2px solid black;
+}
+
+.ourTeam {
+    background-color: $c_section2;
+    font-size: 20px;
+    text-align: center;
+}
+
+.profesors {
+
+    background-color: $c_section2;
+
+    .card {
+        text-align: center;
+        background-color: #3d3546;
+        color: white;
+
+        img {
+            margin-top: 1rem;
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+/* Styles for clases-reservas.html */
+
+.mainClases {
+    background-image: url(../images/chica-entrenando.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+
+    button {
+        color: white;
+    }
+}
+
+.reservation select {
+    width: 200px;
+    background-color: bisque;
+    margin-top: 10px;
+}
+
+.classDescription {
+    width: 560px;
+}
+
+/* Styles for NOVEDADES */
+
+.newsArticle {
+    padding: 3rem;
+    border-bottom: 2px dashed black;
+
+    div {
+        @extend .rowCentered;
+        align-items: center;
+    }
+}
+
+.atrasAdelante {
+    text-align: center;
+    @extend .rowCentered;
+    padding: 2rem;
+
+    input {
+        background-color: #e76c6c;
+        @include border-color(black);
+        font-weight: bold;
+        font-size: 100%;
+        @include margins(lr, 2rem);
+        padding: 10px;
+    }
+}
+
+/* Styles for tienda.html */
+
+.products {
+    @extend .rowCentered;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .card {
+        margin: 20px;
+        z-index: 3;
+        background-color: $c_section3;
+
+        img {
+            margin-top: 1rem;
+            height: 270px;
+        }
+    }
+
+    .card-body {
+        @extend .colCentered;
+        justify-content: space-between;
+
+    }
+}
+
+
+
+/* ---------GRID------------ */
+
+/* VERSIÓN DE ESCRITORIO */
+
+/* GRID AREA HEADER */
+
+.headerContainer {
+    display: grid;
+    grid-template-areas: "logo hello hello hello hello" "logo nav nav nav nav";
+}
+
+/* GRID AREA MAIN de index.html */
+
+.mainContainer {
+    display: grid;
+    grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
+}
+
+/* VERSIÓN TABLETA */
+/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .headerContainer {
+        grid-template-areas: "logo hello" "logo nav";
+    }
+
+    .mainContainer {
+        grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
+    }
+
+    .moralArticle {
+        width: auto;
+        @include margins(lr, 2rem);
+    }
+
+    .pilars {
+        margin-left: 30%;
+        height: 400px;
+    }
+
+    .ask {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        article {
+            width: auto;
+            margin: 20px 50px 20px 50px;
+            text-align: center;
+        }
+
+        aside {
+            margin: 20px 50px 50px 100px;
+        }
+    }
+
+}
+
+/* VISTA MOVIL */
+
+@media (max-width: 767px) {
+    /* index.html */
+
+    .headerContainer {
+        grid-template-areas: "logo hello" "logo nav";
+    }
+
+    .mainContainer {
+        grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
+    }
+
+    .intro {
+        margin-bottom: 0;
+        height: auto;
+
+        div {
+            h2 {
+                margin-top: 10px;
+            }
+
+            * {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .pilars {
+        width: 140px;
+        height: 240px;
+        margin-left: 20%;
+
+        img {
+            width: 100px;
+            height: 200px;
+        }
+    }
+
+    .moralArticle {
+        width: auto;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .ask {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        article {
+            width: auto;
+            margin: 20px 50px 20px 50px;
+            text-align: center;
+        }
+
+    }
+
+    .askAside {
+        width: auto;
+        height: auto;
+        font-size: 10px;
+
+        .form .fila {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            textarea {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                width: 250px;
+            }
+        }
+
+
+        .botones {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+    }
+
+    /* sedes.html */
+    .filiaries {
+        .galery {
+            height: auto;
+        }
+
+        margin-bottom: 0;
+    }
+
+    .schedule {
+        font-size: 8px;
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

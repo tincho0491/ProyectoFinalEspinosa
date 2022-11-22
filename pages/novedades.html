@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gimnasio, musculación, salud, buenos aires, recoleta, palermo, almagro">
+    <meta name="description" content="Todas las novedades sobre las actividades que realizamos.">
+    <title>Novedades</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Links Logo Favicon y CSS-->
+    <link rel="shortcut icon" href="../images/logo-Magym.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1 class="hello colCentered">¡Bienvenidos a Magym!</h1>
+        <a href="../index.html" target="_self" class="logo colCentered">
+            <img src="../images/logo-Magym-sf.png" width="100" height="100" alt="Logo">
+        </a> 
+
+        <nav class="navigation navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="sedes.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sedes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sedes.html">Sedes</a></li>
+                                <li><a class="dropdown-item" href="clases-reservas.html">Clases|Reservas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <nav class="navbar">
+                            <form class="container-fluid justify-content-start">
+                                <!-- Button trigger modal iniciarSesion -->
+                                <button class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                    data-bs-target="#iniciarSesion" type="button">Entrar</button>
+                                <!-- Button trigger modal registrarse -->
+                                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#registrarse" type="button">Registrarse</button>
+                            </form>
+                        </nav>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Modal iniciarSesion -->
+        <div class="modal fade" id="iniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="correoElectrónico" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correoElectrónico"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password1">
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Entrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registrarse" tabindex="-1" aria-labelledby="Register" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="Register">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Newsletter</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container-fluid pt-2 p-0">
+        <h2 class="colCentered">Novedades</h2>
+        <section class="newsArticle news2">
+            <h2 class="mb-3">Fiesta de Fin de Año</h2>
+            <div class="news row">
+                <img src="../images/fiesta.jpg" alt="Novedad 1" class="col-md-3 col-sm-12">
+                <article class="col-md-9 col-sm-12">
+                    <p>Se acerca fin de año y como siempre, queremos compartirlo junto a todos nuestros miembros. El día 23 de Diciembre estaremos organizando un evento al aire libre donde podeamos compartir el día.</p>
+                    <p>Quienes quieran asistir por favor manden un mensaje a cualquiera de nuestros teléfonos. Tenemos preparado un día especial, lleno de sorpresas! Se vienen concursos, sorteos, juegos... Esperamos verte!</p>
+                </article>
+            </div>
+        </section>
+        <section class="newsArticle news3">
+            <h2 class="mb-3">Concurso de Musculación</h2>
+            <div class="news row">
+                <img src="../images/mencion.jpg" alt="imagen de una medalla" class="col-md-3 col-sm-12">
+                <article class="col-md-9 col-sm-12">
+                    <p>Queremos agradecer a nuestros miembros que nos han representado en la competición realizada la semana pasada. Orgullosos del trabajo que realizamos. La mención recibida por nuestros miembros en esta competencia es prueba de ello. Gracias a todos los que hoy nos eligen y forman parte de nuestra comunidad.</p>
+                    <p>Aprovechamos la oportunidad para comunicar a nuestros miembros que todos pueden formar parte del equipo de competición de Magym. Mandando un mensaje a cualquiera de nuestros números de contacto nos pueden hacer saber de su interés. Tenemos clases diseñadas para aquellos que quieran llevar la musculación al próximo nivel.</p>
+                </article>
+            </div>
+        </section>
+        <section class="newsArticle news4">
+            <h2 class="mb-3">Bicicleteada 18 de Marzo</h2>
+            <div class="news row">
+                <img src="../images/bicicleteada.jpg" alt="imagen de una bicicleta" class="col-md-3 col-sm-12">
+                <article class="col-md-9 col-sm-12">
+                    <p>Te invitamos a sumarte a la bicicleteada que vamos a realizar el 18 de Marzo. Mandamos un mensaje a cualquiera de nuestros números de contacto para inscribirte</p>
+                    <p>Esta actividad fue pensada para poder conocer mejor a nuestros miembros. Es para toda la familia. En breve estaremos presentando el mapa de ruta que tenemos pensado realizar. Tenemos premios preparados para todos los que participen. No esperes más, cupos limitados. Inscribite! </p>
+                </article>
+            </div>
+        </section>
+        <section class="atrasAdelante">
+            <input type="button" value="Atrás">
+            <input type="button" value="Adelante">
+        </section>
+    </main>
+
+    <footer>
+        <h2 class="colCentered mb-3">Canales de Comunicación</h2>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../images/facebook-logo.png" width="40" height="40" alt="Facebook">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../images/logo_instagram-sf.png" width="40" height="40" alt="Instagram">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.whatsapp.com" target="_blank">
+                    <img src="../images/WhatsApp_logo-cuadrado-sf.png" width="40" height="40" alt="Whatsapp">
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:contacto@magym.com.ar" target="_blank">
+                    <img src="../images/logo_correo1-sf.png" width="40" height="40" alt="Correo Electrónico">
+                </a>
+            </li>
+        </ul>
+
+        <p>Sitio web creado por Martin</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

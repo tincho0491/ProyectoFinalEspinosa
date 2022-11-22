@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gimnasio, musculación, salud, buenos aires, recoleta, palermo, almagro">
+    <meta name="description" content="Encontrá la sede de Magym que te quede más cómoda.">
+    <title>Sedes</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Links Logo Favicon y CSS-->
+    <link rel="shortcut icon" href="../images/logo-Magym.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="headerContainer border-bottom border-dark">
+        <h1 class="hello colCentered">¡Bienvenidos a Magym!</h1>
+        <a href="../index.html" target="_self" class="logo colCentered">
+            <img src="../images/logo-Magym-sf.png" width="100" height="100" alt="Logo">
+        </a> 
+
+        <nav class="navigation navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="sedes.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sedes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sedes.html">Sedes</a></li>
+                                <li><a class="dropdown-item" href="clases-reservas.html">Clases|Reservas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <nav class="navbar">
+                            <form class="container-fluid justify-content-start">
+                                <!-- Button trigger modal iniciarSesion -->
+                                <button class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                    data-bs-target="#iniciarSesion" type="button">Entrar</button>
+                                <!-- Button trigger modal registrarse -->
+                                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#registrarse" type="button">Registrarse</button>
+                            </form>
+                        </nav>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Modal iniciarSesion -->
+        <div class="modal fade" id="iniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="correoElectrónico" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correoElectrónico"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password1">
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Entrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registrarse" tabindex="-1" aria-labelledby="Register" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="Register">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Newsletter</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <h2 class="colCentered pt-2">Nuestras Sedes</h2>
+        <section class="colCentered mt-4 mb-5 filiaries">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner galery">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="../images/almagro.jpg" class="d-block w-100 img-fluid" alt="Imagen Sede Almagro">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="../images/recoleta.jpg" class="d-block w-100 img-fluid" alt="Imagen Sede Recoleta">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="../images/palermo.jpg" class="d-block w-100 img-fluid" alt="Imagen Sede Palermo">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="schedule colCentered">
+            <h3>Horarios de Nuestras Clases</h3>
+            <h4><a href="clases-reservas.html">Reservá tu clase</a></h4>
+
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miércoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                        <th scope="col">Sábado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">09:00</th>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                        <td>Funcional</td>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:00</th>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:00</th>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">12:00</th>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                        <td>Funcional</td>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13:00</th>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14:00</th>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">17:00</th>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                        <td>Funcional</td>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18:00</th>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19:00</th>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">20:00</th>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                        <td>Funcional</td>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">21:00</th>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">22:00</th>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                        <td>Funcional</td>
+                        <td>Musculación</td>
+                        <td>Spinning</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+        <section class="row location">
+            <iframe class="col-xl-9 col-md-6 col-sm-12"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37164.672047421926!2d-58.446814572493345!3d-34.580790723679655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1667166446760!5m2!1ses-419!2sar"
+                width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="address col-xl-3 col-md-6 col-sm-12">
+                <div>
+                    <h4>Sede Almagro</h4>
+                    <h5>Dirección: Lamarque 560</h5>
+                    <h5>Teléfono: +549115xxxxxx</h5>
+                </div>
+                <div>
+                    <h4>Sede Recoleta</h4>
+                    <h5>Dirección: Av. Perón 2500</h5>
+                    <h5>Teléfono: +549115xxxxxx</h5>
+                </div>
+                <div>
+                    <h4>Sede Palermo</h4>
+                    <h5>Dirección: Dr. Ramón 1640</h5>
+                    <h5>Teléfono: +549115xxxxxx</h5>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <h3 class="colCentered mb-3">Canales de Comunicación</h3>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../images/facebook-logo.png" width="40" height="40" alt="Facebook">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../images/logo_instagram-sf.png" width="40" height="40" alt="Instagram">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.whatsapp.com" target="_blank">
+                    <img src="../images/WhatsApp_logo-cuadrado-sf.png" width="40" height="40" alt="Whatsapp">
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:contacto@magym.com.ar" target="_blank">
+                    <img src="../images/logo_correo1-sf.png" width="40" height="40" alt="Correo Electrónico">
+                </a>
+            </li>
+        </ul>
+
+        <p>Sitio web creado por Martin</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

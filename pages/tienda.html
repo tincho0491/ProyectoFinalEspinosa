@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gimnasio, musculación, salud, buenos aires, recoleta, palermo, almagro">
+    <meta name="description" content="Encontrá todo lo que necesitás para hacer deporte en nuestra tienda.">
+
+    <title>Tienda</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Links Logo Favicon y CSS-->
+    <link rel="shortcut icon" href="../images/logo-Magym.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1 class="hello colCentered">¡Bienvenidos a Magym!</h1>
+        <a href="../index.html" target="_self" class="logo colCentered">
+            <img src="../images/logo-Magym-sf.png" width="100" height="100" alt="Logo">
+        </a> 
+
+        <nav class="navigation navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="sedes.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sedes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sedes.html">Sedes</a></li>
+                                <li><a class="dropdown-item" href="clases-reservas.html">Clases|Reservas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <nav class="navbar">
+                            <form class="container-fluid justify-content-start">
+                                <!-- Button trigger modal iniciarSesion -->
+                                <button class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                    data-bs-target="#iniciarSesion" type="button">Entrar</button>
+                                <!-- Button trigger modal registrarse -->
+                                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#registrarse" type="button">Registrarse</button>
+                            </form>
+                        </nav>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Modal iniciarSesion -->
+        <div class="modal fade" id="iniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="correoElectrónico" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correoElectrónico"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password1">
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Entrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registrarse" tabindex="-1" aria-labelledby="Register" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="Register">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Newsletter</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="container-fluid">
+        <h2 class="colCentered pt-2">Tienda Online</h2>
+
+        <div class="products mt-2 row">
+
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 13rem;">
+                <img src="../images/granola.jpg" class="card-img-top" alt="Imagen de granola">
+                <div class="card-body">
+                    <h5 class="card-title">Granola</h5>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 13rem;">
+                <img src="../images/proteina.jpg" class="card-img-top" alt="Imagen de un tarro de proteína en polvo">
+                <div class="card-body">
+                    <h5 class="card-title">Proteína</h5>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 13rem;">
+                <img src="../images/barras-de-proteinas.jpg" class="card-img-top" alt="Imagen de un barra de proteínas">
+                <div class="card-body">
+                    <h5 class="card-title">Barras de cereal</h5>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 13rem;">
+                <img src="../images/termo-metalico.jpg" class="card-img-top" alt="Imagen de un artículo">
+                <div class="card-body">
+                    <h5 class="card-title">Termo metálico</h5>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="products mt-2 pb-4 row">
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 13rem;">
+                <img src="../images/termo-plastico.jpg" class="card-img-top" alt="Imagen de un artículo">
+                <div class="card-body">
+                    <h5 class="card-title">Termo Plástico</h5>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 13rem;">
+                <img src="../images/2dias.png" class="card-img-top" alt="Imagen de un artículo">
+                <div class="card-body">
+                    <h5 class="card-title">Pase por 2 días</h5>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 13rem;">
+                <img src="../images/3dias.png" class="card-img-top" alt="Imagen de un artículo">
+                <div class="card-body">
+                    <h5 class="card-title">Pase por 3 días</h5>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 13rem;">
+                <img src="../images/pase-libre.png" class="card-img-top" alt="Imagen de un artículo">
+                <div class="card-body">
+                    <h5 class="card-title">Pase Libre</h5>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <h3 class="colCentered mb-3">Canales de Comunicación</h3>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../images/facebook-logo.png" width="40" height="40" alt="Facebook">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../images/logo_instagram-sf.png" width="40" height="40" alt="Instagram">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.whatsapp.com" target="_blank">
+                    <img src="../images/WhatsApp_logo-cuadrado-sf.png" width="40" height="40" alt="Whatsapp">
+                </a>
+            </li>
+
+            <li>
+                <a href="mailto:contacto@magym.com.ar" target="_blank">
+                    <img src="../images/logo_correo1-sf.png" width="40" height="40" alt="Correo Electrónico">
+                </a>
+            </li>
+        </ul>
+
+        <p>Sitio web creado por Martin</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,552 @@
+@charset "UTF-8";
+header {
+  background-color: #474E68;
+  height: 20vh;
+}
+
+/* Estilos Header */
+@keyframes texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.hello {
+  animation-name: texto;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+  grid-area: hello;
+  background: linear-gradient(to bottom, #404258, #6B728E);
+  margin: 0%;
+}
+
+.logo {
+  grid-area: logo;
+  background: linear-gradient(to bottom, #6B728E, #404258);
+  z-index: 2;
+  opacity: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  grid-area: nav;
+  background: linear-gradient(to bottom, #6B728E, #404258);
+  padding-top: 5px;
+  z-index: 2;
+  opacity: 95%;
+}
+.navigation a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+.navigation button {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: #71B0BF;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* FLEXBOX FOOTER */
+footer {
+  background-color: #6B728E;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+/* Estilos generales */
+.colCentered, .products .card-body, .ourHistory, .intro div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rowCentered, .products, .atrasAdelante, .newsArticle div, .askAside .botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.marginLr {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.marginTb {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ml {
+  margin-left: 2rem;
+}
+
+.mr {
+  margin-right: 2rem;
+}
+
+/* MAP - GET */
+.news1 {
+  background-color: #474E68;
+}
+
+.news2 {
+  background-color: #595c75;
+}
+
+.news3 {
+  background-color: #605c75;
+}
+
+.news4 {
+  background-color: #55506b;
+}
+
+.btn--arriba {
+  background-color: #474E68;
+}
+
+.btn--abajo {
+  background-color: #595c75;
+}
+
+.btn--izquierda {
+  background-color: #605c75;
+}
+
+.btn--derecha {
+  background-color: #55506b;
+}
+
+.collapse1:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+.collapsing.collapse-horizontal {
+  width: 0;
+  height: auto;
+  transition: 5s;
+}
+
+/* Estilos MAIN */
+main {
+  background-color: #474E68;
+}
+
+.intro {
+  grid-area: intro;
+  background-image: url(../images/young-fitness-man-in-studio.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+.intro div {
+  margin-left: 5%;
+}
+.intro h2 {
+  font-size: 3rem;
+}
+
+/* Estilo a nuestros pilares */
+.pilars {
+  background-color: white;
+  box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.4784313725);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: auto;
+}
+
+.pilar1 {
+  grid-area: pilar1;
+}
+
+.pilar2 {
+  grid-area: pilar2;
+}
+
+.moralArticle {
+  grid-area: moralAr;
+  width: 800px;
+  line-height: 25px;
+  font-size: large;
+}
+.moralArticle a {
+  color: #93d3df;
+}
+.moralArticle a:visited {
+  color: #93d3df;
+}
+
+/* Estilo para sección de formulario */
+.ask {
+  grid-area: ask;
+  width: auto;
+  background-color: #50577A;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ask article {
+  font-size: 20px;
+  line-height: 40px;
+  width: 400px;
+  display: block;
+}
+.ask article a {
+  color: #93d3df;
+}
+.ask article a:visited {
+  color: #93d3df;
+}
+
+/* FORMULARIOS */
+.askAside {
+  width: 600px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 4px;
+  /* Estilo para botones de formulario */
+}
+.askAside div {
+  margin-bottom: 0.5rem;
+}
+.askAside .fila {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.askAside .fila .columna1 {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.askAside .fila .columna1 input {
+  font-size: 1rem;
+  padding: 1px;
+  border: 2px solid #350149;
+  height: 30px;
+  /* Animación para formulario */
+}
+.askAside .fila .columna1 input:hover {
+  height: 35px;
+  transition: all 1s;
+}
+.askAside .fila .columna2 {
+  width: 300px;
+  height: 150px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 2px solid #350149;
+  margin-left: 2rem;
+  font-size: 1rem;
+  padding: 2px;
+}
+.askAside .botones {
+  align-items: center;
+  margin-top: 1rem;
+}
+.askAside .botones input {
+  background-color: rgba(50, 50, 50, 0.2);
+  border: 2px solid #2b023b;
+  margin: 10px;
+  font-size: 1rem;
+  padding: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*--------- Style for Sedes.html ---------- */
+.galery {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.schedule {
+  background-color: #50577A;
+}
+.schedule table {
+  width: 70vw;
+  border: 2px solid #754848;
+}
+
+.location {
+  background-color: #666a9b;
+  padding: 1rem 2rem 1rem 2rem;
+  width: auto;
+}
+.location div {
+  margin-top: 20px;
+  margin-bottom: 2rem;
+}
+
+/* Styles for sobre-nosotros.html */
+.ourHistory button {
+  background-color: #474E68;
+}
+
+.cronology .card {
+  background-color: #666a9b;
+  border: 2px solid black;
+}
+
+.ourTeam {
+  background-color: #50577A;
+  font-size: 20px;
+  text-align: center;
+}
+
+.profesors {
+  background-color: #50577A;
+}
+.profesors .card {
+  text-align: center;
+  background-color: #3d3546;
+  color: white;
+}
+.profesors .card img {
+  margin-top: 1rem;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Styles for clases-reservas.html */
+.mainClases {
+  background-image: url(../images/chica-entrenando.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.mainClases button {
+  color: white;
+}
+
+.reservation select {
+  width: 200px;
+  background-color: bisque;
+  margin-top: 10px;
+}
+
+.classDescription {
+  width: 560px;
+}
+
+/* Styles for NOVEDADES */
+.newsArticle {
+  padding: 3rem;
+  border-bottom: 2px dashed black;
+}
+.newsArticle div {
+  align-items: center;
+}
+
+.atrasAdelante {
+  text-align: center;
+  padding: 2rem;
+}
+.atrasAdelante input {
+  background-color: #e76c6c;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 10px;
+}
+
+/* Styles for tienda.html */
+.products {
+  align-items: center;
+  justify-content: space-evenly;
+}
+.products .card {
+  margin: 20px;
+  z-index: 3;
+  background-color: #666a9b;
+}
+.products .card img {
+  margin-top: 1rem;
+  height: 270px;
+}
+.products .card-body {
+  justify-content: space-between;
+}
+
+/* ---------GRID------------ */
+/* VERSIÓN DE ESCRITORIO */
+/* GRID AREA HEADER */
+.headerContainer {
+  display: grid;
+  grid-template-areas: "logo hello hello hello hello" "logo nav nav nav nav";
+}
+
+/* GRID AREA MAIN de index.html */
+.mainContainer {
+  display: grid;
+  grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
+}
+
+/* VERSIÓN TABLETA */
+/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .headerContainer {
+    grid-template-areas: "logo hello" "logo nav";
+  }
+  .mainContainer {
+    grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
+  }
+  .moralArticle {
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .pilars {
+    margin-left: 30%;
+    height: 400px;
+  }
+  .ask {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .ask article {
+    width: auto;
+    margin: 20px 50px 20px 50px;
+    text-align: center;
+  }
+  .ask aside {
+    margin: 20px 50px 50px 100px;
+  }
+}
+/* VISTA MOVIL */
+@media (max-width: 767px) {
+  /* index.html */
+  .headerContainer {
+    grid-template-areas: "logo hello" "logo nav";
+  }
+  .mainContainer {
+    grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
+  }
+  .intro {
+    margin-bottom: 0;
+    height: auto;
+  }
+  .intro div h2 {
+    margin-top: 10px;
+  }
+  .intro div * {
+    font-size: 20px;
+  }
+  .pilars {
+    width: 140px;
+    height: 240px;
+    margin-left: 20%;
+  }
+  .pilars img {
+    width: 100px;
+    height: 200px;
+  }
+  .moralArticle {
+    width: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .ask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .ask article {
+    width: auto;
+    margin: 20px 50px 20px 50px;
+    text-align: center;
+  }
+  .askAside {
+    width: auto;
+    height: auto;
+    font-size: 10px;
+  }
+  .askAside .form .fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .askAside .form .fila textarea {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 250px;
+  }
+  .askAside .botones {
+    display: flex;
+    flex-direction: row;
+  }
+  /* sedes.html */
+  .filiaries {
+    margin-bottom: 0;
+  }
+  .filiaries .galery {
+    height: auto;
+  }
+  .schedule {
+    font-size: 8px;
+  }
+  .schedule * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
