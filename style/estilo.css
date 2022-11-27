@@ -1,4 +1,46 @@
 @charset "UTF-8";
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+/* Estilos generales */
+.colCentered, .products .card-body, .ourHistory, .intro div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rowCentered, .products, .atrasAdelante, .newsArticle div, .askAside .botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.marginLr {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.marginTb {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ml {
+  margin-left: 2rem;
+}
+
+.mr {
+  margin-right: 2rem;
+}
+
 header {
   background-color: #474E68;
   height: 20vh;
@@ -74,47 +116,6 @@ footer p {
   margin-bottom: 0;
 }
 
-* {
-  border: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* html {
-    font-size: 62.5%;
-} */
-/* Estilos generales */
-.colCentered, .products .card-body, .ourHistory, .intro div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.rowCentered, .products, .atrasAdelante, .newsArticle div, .askAside .botones {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.marginLr {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.marginTb {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.ml {
-  margin-left: 2rem;
-}
-
-.mr {
-  margin-right: 2rem;
-}
-
 /* MAP - GET */
 .news1 {
   background-color: #474E68;
@@ -129,22 +130,6 @@ footer p {
 }
 
 .news4 {
-  background-color: #55506b;
-}
-
-.btn--arriba {
-  background-color: #474E68;
-}
-
-.btn--abajo {
-  background-color: #595c75;
-}
-
-.btn--izquierda {
-  background-color: #605c75;
-}
-
-.btn--derecha {
   background-color: #55506b;
 }
 
@@ -365,7 +350,6 @@ main {
   background-image: url(../images/chica-entrenando.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  color: white;
 }
 .mainClases button {
   color: white;
@@ -436,8 +420,9 @@ main {
   grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
 }
 
+/*MEDIA QUERIES*/
 /* VERSIÓN TABLETA */
-/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
+/* Si la pantalla tienen un mínimo de 768 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
 @media (min-width: 768px) and (max-width: 1199px) {
   .headerContainer {
     grid-template-areas: "logo hello" "logo nav";
@@ -468,6 +453,10 @@ main {
   }
   .ask aside {
     margin: 20px 50px 50px 100px;
+  }
+  /* Clases|Reservas*/
+  .mainClases {
+    background-size: cover;
   }
 }
 /* VISTA MOVIL */
@@ -546,6 +535,10 @@ main {
   .schedule * {
     margin: 0;
     padding: 0;
+  }
+  /* Clases|Reservas*/
+  .mainClases {
+    background-size: cover;
   }
 }
 

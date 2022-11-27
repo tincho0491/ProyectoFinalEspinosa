@@ -1,4 +1,4 @@
-@import "header", "footer", "structures", "variables", "mixins", "maps", "transitions";
+@import "structures", "header", "footer", "variables", "mixins", "maps", "transitions";
 
 
 /* Estilos MAIN */
@@ -231,7 +231,6 @@ main {
     background-image: url(../images/chica-entrenando.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    color: white;
 
     button {
         color: white;
@@ -320,8 +319,11 @@ main {
     grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
 }
 
+
+/*MEDIA QUERIES*/
+
 /* VERSIÓN TABLETA */
-/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
+/* Si la pantalla tienen un mínimo de 768 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .headerContainer {
@@ -358,6 +360,11 @@ main {
         aside {
             margin: 20px 50px 50px 100px;
         }
+    }
+
+    /* Clases|Reservas*/
+    .mainClases {
+        background-size: cover;
     }
 
 }
@@ -463,5 +470,10 @@ main {
             margin: 0;
             padding: 0;
         }
+    }
+
+    /* Clases|Reservas*/
+    .mainClases {
+        background-size: cover;
     }
 }
