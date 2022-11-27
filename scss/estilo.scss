@@ -4,6 +4,7 @@
 /* Estilos MAIN */
 main {
     background-color: $c_section1;
+    overflow-x: hidden;
 }
 
 .intro {
@@ -61,7 +62,6 @@ main {
     width: 800px;
     line-height: 25px;
     font-size: large;
-
     @include linkVisited;
 }
 
@@ -69,7 +69,6 @@ main {
 
 .ask {
     grid-area: ask;
-    width: auto;
     background-color: $c_section2;
     display: flex;
     justify-content: space-evenly;
@@ -317,6 +316,15 @@ main {
 .mainContainer {
     display: grid;
     grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
+
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }
 
 
@@ -410,8 +418,9 @@ main {
 
     .moralArticle {
         width: auto;
+        @include margins(lr, 2rem);
         margin-left: 30px;
-        margin-top: 10px;
+        margin-top: 1rem;
     }
 
     .ask {
