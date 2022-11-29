@@ -418,8 +418,10 @@ main {
 .products {
   align-items: center;
   justify-content: space-evenly;
+  position: initial;
 }
 .products .card {
+  position: relative;
   margin: 20px;
   z-index: 4;
   background-color: #666a9b;
