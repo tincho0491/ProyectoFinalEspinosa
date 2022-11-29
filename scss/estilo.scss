@@ -25,7 +25,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    
+
     div {
         @extend .colCentered;
         justify-content: center;
@@ -138,7 +138,7 @@ main {
         @extend .rowCentered;
         align-items: center;
         @include margins(t, 1rem);
-        
+
         input {
             @include border-color(#2b023b);
             @include margins (all, 10px);
@@ -275,7 +275,7 @@ main {
     @extend .rowCentered;
     align-items: center;
     justify-content: space-evenly;
-    position:initial;
+    position: initial;
 
     .card {
         position: relative;
@@ -287,6 +287,7 @@ main {
             margin-top: 1rem;
             height: 270px;
         }
+
         a {
             @include button;
             text-decoration: none;
@@ -484,4 +485,3 @@ main {
         background-size: cover;
     }
 }
-
