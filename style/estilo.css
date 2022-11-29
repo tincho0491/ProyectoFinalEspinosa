@@ -83,6 +83,7 @@ header {
 }
 .navigation .dropdown-menu {
   background-color: #474E68;
+  z-index: 2;
 }
 .navigation a {
   text-decoration: none;
@@ -420,7 +421,7 @@ main {
 }
 .products .card {
   margin: 20px;
-  z-index: 3;
+  z-index: 4;
   background-color: #666a9b;
 }
 .products .card img {

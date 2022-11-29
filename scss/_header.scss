@@ -43,6 +43,7 @@ header {
 
     .dropdown-menu {
         background-color: $c_section1;
+        z-index: 2;
     }
     
     a {
