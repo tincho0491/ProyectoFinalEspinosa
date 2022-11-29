@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables", "mixins";
 header {
     background-color: $c_section1;
     height: 20vh;
@@ -40,6 +40,10 @@ header {
     padding-top: 5px;
     z-index: 2;
     opacity: 95%;
+
+    .dropdown-menu {
+        background-color: $c_section1;
+    }
     
     a {
         text-decoration: none;
@@ -49,12 +53,10 @@ header {
     }
 
     button {
-        text-transform: uppercase;
-        font-weight: bold;
-        color: black;
-        background-color: #71B0BF;
-        border: 1px solid black;
-        border-radius: 3px;
-        cursor: pointer;
+        @include button;
     }
+}
+
+.modal-content * {
+    color: black;
 }

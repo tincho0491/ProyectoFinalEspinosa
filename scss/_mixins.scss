@@ -38,3 +38,18 @@
         }
     }
 }
+
+@mixin button {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    background-color: #71B0BF;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer; 
+
+    &:hover {
+        background-color: #727272;
+        color: white;
+    }
+}

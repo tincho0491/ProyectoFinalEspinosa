@@ -81,6 +81,9 @@ header {
   z-index: 2;
   opacity: 95%;
 }
+.navigation .dropdown-menu {
+  background-color: #474E68;
+}
 .navigation a {
   text-decoration: none;
   text-transform: uppercase;
@@ -96,13 +99,21 @@ header {
   border-radius: 3px;
   cursor: pointer;
 }
+.navigation button:hover {
+  background-color: #727272;
+  color: white;
+}
+
+.modal-content * {
+  color: black;
+}
 
 /* FLEXBOX FOOTER */
 footer {
   background-color: #6B728E;
 }
 footer h2 {
-  color: black;
+  color: white;
 }
 footer ul {
   display: flex;
@@ -118,7 +129,7 @@ footer p {
   align-items: center;
   margin-bottom: 0;
   margin-right: 1%;
-  color: black;
+  color: white;
 }
 
 /* MAP - GET */
@@ -167,21 +178,19 @@ main {
   background-position: top;
   height: 80vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  color: white;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .intro div {
-  margin-left: 5%;
-}
-.intro h2 {
-  font-size: 3rem;
+  justify-content: center;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
 /* Estilo a nuestros pilares */
@@ -228,6 +237,8 @@ main {
   line-height: 40px;
   width: 400px;
   display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .ask article a {
   color: #93d3df;
@@ -241,6 +252,8 @@ main {
   width: 600px;
   height: auto;
   border: 2px solid black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border-radius: 4px;
   padding: 4px;
   /* Estilo para botones de formulario */
@@ -284,13 +297,20 @@ main {
   margin-top: 1rem;
 }
 .askAside .botones input {
-  background-color: rgba(50, 50, 50, 0.2);
   border: 2px solid #2b023b;
   margin: 10px;
-  font-size: 1rem;
   padding: 4px;
+  text-transform: uppercase;
   font-weight: bold;
+  color: black;
+  background-color: #71B0BF;
+  border: 1px solid black;
+  border-radius: 3px;
   cursor: pointer;
+}
+.askAside .botones input:hover {
+  background-color: #727272;
+  color: white;
 }
 
 /*--------- Style for Sedes.html ---------- */
@@ -407,6 +427,22 @@ main {
   margin-top: 1rem;
   height: 270px;
 }
+.products .card a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  background-color: #71B0BF;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+.products .card a:hover {
+  background-color: #727272;
+  color: white;
+}
 .products .card-body {
   justify-content: space-between;
 }
@@ -416,17 +452,13 @@ main {
 /* GRID AREA HEADER */
 .headerContainer {
   display: grid;
-  grid-template-areas: "logo hello hello hello hello" "logo nav nav nav nav";
+  grid-template-areas: "logo hello hello hello hello hello hello" "logo nav nav nav nav nav nav";
 }
 
 /* GRID AREA MAIN de index.html */
 .mainContainer {
   display: grid;
   grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
-}
-.mainContainer h3 {
-  font-size: 2rem;
-  font-weight: bold;
 }
 .mainContainer h2 {
   font-size: 2rem;
@@ -486,10 +518,10 @@ main {
     height: auto;
   }
   .intro div h2 {
-    margin-top: 10px;
+    margin-top: 0.5rem;
   }
   .intro div * {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .pilars {
     width: 140px;
@@ -512,16 +544,17 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 2rem;
   }
   .ask article {
     width: auto;
-    margin: 20px 50px 20px 50px;
+    margin-bottom: 2rem;
     text-align: center;
   }
   .askAside {
     width: auto;
     height: auto;
-    font-size: 10px;
+    font-size: 1rem;
   }
   .askAside .form .fila {
     display: flex;
