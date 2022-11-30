@@ -275,12 +275,10 @@ main {
     @extend .rowCentered;
     align-items: center;
     justify-content: space-evenly;
-    position: initial;
 
     .card {
-        position: relative;
         margin: 20px;
-        z-index: 4;
+        z-index: 1;
         background-color: $c_section3;
 
         img {

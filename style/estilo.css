@@ -67,7 +67,7 @@ header {
 .logo {
   grid-area: logo;
   background: linear-gradient(to bottom, #6B728E, #404258);
-  z-index: 2;
+  z-index: 0;
   opacity: 95%;
   display: flex;
   align-items: center;
@@ -78,12 +78,12 @@ header {
   grid-area: nav;
   background: linear-gradient(to bottom, #6B728E, #404258);
   padding-top: 5px;
-  z-index: 2;
+  z-index: 0;
   opacity: 95%;
 }
 .navigation .dropdown-menu {
   background-color: #474E68;
-  z-index: 2;
+  z-index: 0;
 }
 .navigation a {
   text-decoration: none;
@@ -418,12 +418,10 @@ main {
 .products {
   align-items: center;
   justify-content: space-evenly;
-  position: initial;
 }
 .products .card {
-  position: relative;
   margin: 20px;
-  z-index: 4;
+  z-index: 1;
   background-color: #666a9b;
 }
 .products .card img {
