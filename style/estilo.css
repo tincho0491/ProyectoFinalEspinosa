@@ -67,7 +67,6 @@ header {
 .logo {
   grid-area: logo;
   background: linear-gradient(to bottom, #6B728E, #404258);
-  z-index: 0;
   opacity: 95%;
   display: flex;
   align-items: center;
@@ -78,12 +77,11 @@ header {
   grid-area: nav;
   background: linear-gradient(to bottom, #6B728E, #404258);
   padding-top: 5px;
-  z-index: 0;
+  z-index: 10;
   opacity: 95%;
 }
 .navigation .dropdown-menu {
   background-color: #474E68;
-  z-index: 0;
 }
 .navigation a {
   text-decoration: none;
@@ -364,6 +362,7 @@ main {
   text-align: center;
   background-color: #3d3546;
   color: white;
+  z-index: 1;
 }
 .profesors .card img {
   margin-top: 1rem;
